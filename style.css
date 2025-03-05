@@ -80,6 +80,10 @@ nav{
     transition: 0.15s all ease;
 }
 
+.navbar ul li a:hover{
+    color: #06b8ff;
+}
+
 .Portfolio-Container{
     display: flex;
     align-items: center;
