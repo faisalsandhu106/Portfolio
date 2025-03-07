@@ -18,7 +18,6 @@ function tl_1(){
             duration:0.7,
         })
         
-
         tl_1.from(".navbar ul li",{
             opacity:0,
             y:30,
@@ -57,7 +56,14 @@ function tl_1(){
             opacity:0,
             y:50, 
             delay:0.3,
-            duration:0.4,
+            duration:0,
+        },2)
+
+        tl_1.from(".img-container ",{
+            opacity:0,
+            x:20, 
+            delay:-0.3,
+            duration:0.6,
         },2)
 
         
@@ -75,6 +81,7 @@ window.addEventListener("scroll", function() {
      
       if (currentScroll < lastScrollTop) {
           navbar.style.top = "0";
+          navbar.style.backgroundColor = "#06131c"
       } else {
           navbar.style.top = "-80px";
       }
@@ -184,25 +191,6 @@ function tl_7(){
         
 }
 
-function tl_8(){
-    let tl_8 = gsap.timeline({
-        scrollTrigger:{
-            trigger:"nav",
-            scroller:"body",
-            start:"top -100%",
-            scrub:1,
-        }
-    })
-
-    tl_8.to("nav",{
-        display:"block",
-        y:-100,
-        delay:0,
-        duration: 0.2,
-    })
-    
-}
-
 function sideBar(){
     let openMenubar = document.querySelector(".ri-menu-3-line")
     let crossMenubar = document.querySelector(".ri-close-large-line")
@@ -237,5 +225,4 @@ tl_4()
 tl_5()
 tl_6()
 tl_7()
-
 sideBar()
