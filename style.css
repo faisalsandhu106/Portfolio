@@ -383,7 +383,7 @@ nav{
     background-size: cover;
     background-position: center;
     z-index: 2;
-    opacity: 0.95;
+    opacity: 0.98;
     background: linear-gradient(to bottom, gray, black);
 
 }
@@ -1521,7 +1521,7 @@ nav{
     animation-name: img-container-img;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 3s;
     animation-direction: alternate-reverse;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -1529,15 +1529,16 @@ nav{
 
 .img-container img{
     position: absolute;
+    left: 0%;
     width: 100%;
-    height: 100%;
-    scale: 1.34;
+    height: 123.5%;
+    scale: 1.6;
     border-radius: 0%;
     object-fit: contain;
     background-size: cover;
     background-position: center;
     z-index: 2;
-    opacity: 0.98;
+    opacity: 0.99;
 }
 
 @keyframes img-container-img{
